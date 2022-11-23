@@ -1,153 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+ul {
+    list-style: none;
+}
+.time_table {
+    width: calc(100vw - calc(100vw - 100%));
+    height: 1000px;
+    background-color: #fffffd;
+}
+.timeschedule {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:space-around;
+}
+.Schedule {
+    height: 1000px;
+    justify-content: space-around;
+    min-width: 100px;
+    flex-grow: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.Schedule::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 100%;
+    background: #5f7037;
+    left: calc(50% + 35px);
+    margin-left: -10px;
+    transform: translateX(50%);
+    z-index: 1;
+}
+input:checked + label.Schedule {
+    flex-grow: 1;
+    /*transition: flex-grow 0.5s;*/
+}
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table tbody tr th ,
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table tbody tr td.color01 span ,
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table tbody tr td.line_border ,
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table tbody tr td.line_border div.content_detail {
+    display: none;
+}
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table .table_top{
+    clip-path: polygon(0 0,100% 0, 100% 75%, 50% 100%,0 75%);
+    width: 100px;
+}
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table .table_top .top_content {
+    clip-path: polygon(5% 0,95% 0, 95% 55%,5% 55%);
+    padding-left: 0;
+    padding-top: 15px;
+}
+input:not(:checked) + label.Schedule::before {
+    left: 50%;
+}
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table tbody tr .line3_table_spot ,
+input:not(:checked) + label.Schedule div.timeTable div.tableBox table tbody tr .line2_table_spot {
+    display: block;
+}
+input[type="radio"]{
+    display: none;
+}
 
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>大宮キャンフェス2022タイムスケジュールデータ</title>
-        <link rel="stylesheet" href="css/time_deta.css">
-    </head>
-    <body>
-        <div class="timetable">
-            <div class="timeschedule">
-                    <div class="table_time">
-                        <div class="table_top">time</div>
-                    </div>
-                    <input type="radio" name="stage_column" id="Astage" checked>
-                    <label class="Schedule reversal" for="Astage">
-                        <div class="table_top"><p class="reversal">A<span class="table_stage reversal"></span></p></div>
-                        <ul class="table_deta">
-                            <li class="main_content">
-                                <h2 class="reversal">初めの題名</h2>
-                                <p class="reversal">スタイルは後で</p>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title reversal">題名</h2>
-                                    <h4 class="table_headline reversal">サブタイトル</h4>
-                                    <p class="table_content reversal">なんか</p>
-                                </article>
-                            </li>
-                            <li class="space" style="height: 60px;"></li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title reversal">題名</h2>
-                                    <h4 class="table_headline reversal">サブタイトル</h4>
-                                    <p class="table_content reversal">なんか</p>
-                                </article>
-                            </li>
-                            <li class="space" style="height: 50px;"></li>
-                            <li class="deta_line" style="top:  -10px;">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title reversal">題名</h2>
-                                    <h4 class="table_headline reversal">サブタイトル</h4>
-                                    <p class="table_content reversal">なんか</p>
-                                </article>
-                            </li>
-                            <li class="main_content" style="bottom: 0;">
-                                <h2 class="reversal">最後の題名</h2>
-                                <p class="reversal">スタイルは後で</p>
-                            </li>
-                        </ul>
-                    </label>
-                    <input type="radio" name="stage_column" id="Bstage">
-                    <label class="Schedule" for="Bstage">
-                        <div class="table_top"><p>B<span class="table_stage"></span></p></div>
-                        <ul class="table_deta">
-                            <li class="main_content">
-                                <h2>初めの題名</h2>
-                                <p>スタイルは後で</p>
-                            </li>
-                            <li class="space" style="height: 70px;"></li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="space" style="height: 70px;"></li>
-                            <li class="deta_line" style="margin-bottom: 10px;">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="main_content" style="bottom: 0;">
-                                <h2>最後の題名</h2>
-                                <p>スタイルは後で</p>
-                            </li>
-                        </ul>
-                    </label>
-                    <input type="radio" name="stage_column" id="Cstage">
-                    <label class="Schedule" for="Cstage">
-                        <div class="table_top"><p>C<span class="table_stage"></span></p></div>
-                        <ul class="table_deta">
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                        </ul>
-                    </label>
-                    <input type="radio" name="stage_column" id="Dstage">
-                    <label class="Schedule" for="Dstage">
-                        <div class="table_top"><p>D<span class="table_stage"></span></p></div>
-                    </label>
-                    <input type="radio" name="stage_column" id="Estage">
-                    <label class="Schedule" for="Estage">
-                        <div class="table_top"><p>E<span class="table_stage"></span></p></div>
-                    </label>
-            </div>
-        </div>
-    </body>
-</html>
+.table_top {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    min-height: 70px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-left: solid 1px #fffffd;
+    border-right: solid 1px #fffffd;
+    clip-path: polygon(0 0,100% 0, 100% 75%, calc(50% + 35px) 100%, 70px 75%, 0 75%);
+    background-color:#5f7037;
+    z-index: 10;
+    overflow: hidden;
+}
+input:checked + label.Schedule div.timeTable div.tableBox table .table_top .top_content::after {
+    content: "ステージ";
+}
+.top_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    clip-path:polygon(.5% 0,97% 0, 97% 50%, calc(49% + 35px) 70%, 70px 50%,.5% 50%);
+    background-color: #fffffd;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+.line3_table_spot ,
+.line2_table_spot {
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 50px;
+    border-radius: 15px;
+    background-color: #fffffd;
+    border: solid 10px #5f7037;
+    transform: translateX(50%);
+    display: none;
+}
+.line3_table_spot {
+    height: 100px;
+    margin: 10px 0;
+}
+.line2_table_spot {
+    height: 70px;
+    margin: 5px 0;
+}
+caption {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+.timeTable {
+    width: 100%;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+.tableBox{
+    height: 1000px;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+th {
+    width: 70px;
+    font-size:12px;
+    color: #b0bb99;
+    text-align: center;
+    vertical-align: top;
+}
+td {
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+
+}
+.tableBox th.just {
+    padding-top: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+.time_line {
+    border-top: solid 10x #b0bb99;
+}
+.line_border {
+    top: 5px;
+    width: calc(100% - 70px);
+    border: solid 10px #5f7037;
+    box-sizing: border-box;
+    background-color: #fffffd;
+    border-radius: 15px;
+    z-index: 9;
+}
+.color01{
+    color: black;
+    background:#D8C8AE;
+}
+.line2 {
+    height: 80px;
+}
+.line3 {
+    height: 120px;
+}
+.content_detail * {
+    position: relative;
+    text-align: center;
+}
+.table_title::after {
+    content: '';
+    width: 60%;
+    height: 4px;
+    display: inline-block;
+    background-color: #b0bb99;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
