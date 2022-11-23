@@ -1,152 +1,454 @@
-
 <!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>大宮キャンフェス2022タイムスケジュールデータ</title>
+        <title>大宮キャンフェス2022タイムスケジュール_データ</title>
         <link rel="stylesheet" href="css/time_deta.css">
     </head>
     <body>
-        <div class="timetable">
+        <div class="time_table">
             <div class="timeschedule">
-                    <div class="table_time">
-                        <div class="table_top">time</div>
+                <input type="radio" name="stage_column" id="Astage" checked>
+                <label class="Schedule" for="Astage">
+                    <div class="timeTable">
+                        <div class="tableBox">
+                            <table>
+                                <caption class="table_top"><span class="top_content">■A</span></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="just color01"></th>
+                                        <td class="color01"><span>[13:00] start</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">13:20</th>
+                                        <td class="line3 line_border">
+                                            <div class="content_detail">
+                                                <h2 class="table_title">[13:20～] 題名</h2>
+                                                <h4 class="table_headline">サブタイトル</h4>
+                                                <p class="table_content">一つ一つにこんな感じの文章が入れられます</p>
+                                            </div>
+                                        </td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">14:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line2 ">14:10</th>
+                                        <td class="line2 line_border"><div class="content_detail">[14:10～] なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>14:50</th>
+                                        <td class="line2 line_border" rowspan="2"><div class="content_detail">[14:50～] なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">15:00</th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3">15:30</th>
+                                        <td class="line3 line_border"><div class="content_detail">[15:30～]  なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just">16:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">16:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[16:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="color01"></th>
+                                        <td class="color01"><span>[17:00] CLOSE</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <input type="radio" name="stage_column" id="Astage" checked>
-                    <label class="Schedule reversal" for="Astage">
-                        <div class="table_top"><p class="reversal">A<span class="table_stage reversal"></span></p></div>
-                        <ul class="table_deta">
-                            <li class="main_content">
-                                <h2 class="reversal">初めの題名</h2>
-                                <p class="reversal">スタイルは後で</p>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title reversal">題名</h2>
-                                    <h4 class="table_headline reversal">サブタイトル</h4>
-                                    <p class="table_content reversal">なんか</p>
-                                </article>
-                            </li>
-                            <li class="space" style="height: 60px;"></li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title reversal">題名</h2>
-                                    <h4 class="table_headline reversal">サブタイトル</h4>
-                                    <p class="table_content reversal">なんか</p>
-                                </article>
-                            </li>
-                            <li class="space" style="height: 50px;"></li>
-                            <li class="deta_line" style="top:  -10px;">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title reversal">題名</h2>
-                                    <h4 class="table_headline reversal">サブタイトル</h4>
-                                    <p class="table_content reversal">なんか</p>
-                                </article>
-                            </li>
-                            <li class="main_content" style="bottom: 0;">
-                                <h2 class="reversal">最後の題名</h2>
-                                <p class="reversal">スタイルは後で</p>
-                            </li>
-                        </ul>
-                    </label>
-                    <input type="radio" name="stage_column" id="Bstage">
-                    <label class="Schedule" for="Bstage">
-                        <div class="table_top"><p>B<span class="table_stage"></span></p></div>
-                        <ul class="table_deta">
-                            <li class="main_content">
-                                <h2>初めの題名</h2>
-                                <p>スタイルは後で</p>
-                            </li>
-                            <li class="space" style="height: 70px;"></li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="space" style="height: 70px;"></li>
-                            <li class="deta_line" style="margin-bottom: 10px;">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="main_content" style="bottom: 0;">
-                                <h2>最後の題名</h2>
-                                <p>スタイルは後で</p>
-                            </li>
-                        </ul>
-                    </label>
-                    <input type="radio" name="stage_column" id="Cstage">
-                    <label class="Schedule" for="Cstage">
-                        <div class="table_top"><p>C<span class="table_stage"></span></p></div>
-                        <ul class="table_deta">
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                            <li class="deta_line">
-                                <div class="table_spot"></div>
-                                <article class="table_detail">
-                                    <h2 class="table_title">題名</h2>
-                                    <h4 class="table_headline">サブタイトル</h4>
-                                    <p class="table_content">なんか</p>
-                                </article>
-                            </li>
-                        </ul>
-                    </label>
-                    <input type="radio" name="stage_column" id="Dstage">
-                    <label class="Schedule" for="Dstage">
-                        <div class="table_top"><p>D<span class="table_stage"></span></p></div>
-                    </label>
-                    <input type="radio" name="stage_column" id="Estage">
-                    <label class="Schedule" for="Estage">
-                        <div class="table_top"><p>E<span class="table_stage"></span></p></div>
-                    </label>
+                </label>
+                <input type="radio" name="stage_column" id="Bstage">
+                <label class="Schedule" for="Bstage">
+                    <div class="timeTable">
+                        <div class="tableBox">
+                            <table>
+                                <caption class="table_top"><span class="top_content">■B</span></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="just color01"></th>
+                                        <td class="color01"><span><span>[13:00] start</span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">13:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[13:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">14:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line2 ">14:10</th>
+                                        <td class="line2 line_border"><div class="content_detail">[14:10～] なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>14:50</th>
+                                        <td class="line2 line_border" rowspan="2"><div class="content_detail">[14:50～]  なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">15:00</th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3">15:30</th>
+                                        <td class="line3 line_border"><div class="content_detail">[15:30～]  なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just">16:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">16:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[16:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="color01"></th>
+                                        <td class="color01"><span>[17:00] CLOSE</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="stage_column" id="Cstage">
+                <label class="Schedule" for="Cstage">
+                    <div class="timeTable">
+                        <div class="tableBox">
+                            <table>
+                                <caption class="table_top"><span class="top_content">■C</span></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="just color01"></th>
+                                        <td class="color01"><span>[13:00] start</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">13:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[13:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">14:00</th>
+                                        <td></td>
+                                        </tr>
+                                    <tr class="content_line">
+                                        <th class="line2 ">14:10</th>
+                                        <td class="line2 line_border"><div class="content_detail">[14:10～] なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>14:50</th>
+                                        <td class="line2 line_border" rowspan="2"><div class="content_detail">[14:50～]  なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">15:00</th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                        </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3">15:30</th>
+                                        <td class="line3 line_border"><div class="content_detail">[15:30～]  なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just">16:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">16:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[16:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="color01"></th>
+                                        <td class="color01"><span>[17:00] CLOSE</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="stage_column" id="Dstage">
+                <label class="Schedule" for="Dstage">
+                    <div class="timeTable">
+                        <div class="tableBox">
+                            <table>
+                                <caption class="table_top"><span class="top_content">■D</span></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="just color01"></th>
+                                        <td class="color01"><span>[13:00] start</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3">13:30</th>
+                                        <td class="line3 line_border"><div class="content_detail">[13:30～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">14:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">14:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[14:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">15:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line2 ">15:10</th>
+                                        <td class="line2 line_border"><div class="content_detail">[15:10～] なんか</div></td>
+                                        <td class="line2_table_spot"></td>    
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line2">15:40</th>
+                                        <td class="line2 line_border"><div class="content_detail">[15:40～]  なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just">16:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">16:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[16:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="color01"></th>
+                                        <td class="color01"><span>[17:00] CLOSE</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="stage_column" id="Estage">
+                <label class="Schedule" for="Estage">
+                    <div class="timeTable">
+                        <div class="tableBox">
+                            <table>
+                                <caption class="table_top"><span class="top_content">■E</span></caption>
+                                <tbody>
+                                    <tr>
+                                        <th class="just color01"></th>
+                                        <td class="color01"><span>[13:00] start</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3">13:30</th>
+                                        <td class="line3 line_border"><div class="content_detail">[13:30～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just">14:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">14:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[14:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just ">15:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line2 ">15:10</th>
+                                        <td class="line2 line_border"><div class="content_detail">[15:10～] なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line2">15:40</th>
+                                        <td class="line2 line_border"><div class="content_detail">[15:40～]  なんか</div></td>
+                                        <td class="line2_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="just">16:00</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="content_line">
+                                        <th class="line3 ">16:20</th>
+                                        <td class="line3 line_border"><div class="content_detail">[16:20～] なんか</div></td>
+                                        <td class="line3_table_spot"></td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="color01"></th>
+                                        <td class="color01"><span>[17:00] CLOSE</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
     </body>
