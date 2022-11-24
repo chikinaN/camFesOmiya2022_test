@@ -154,6 +154,7 @@ article .mc_content {
 } 
 .content_detail {
     text-align: center;
+
 }
 .table_title {
     font-size: 25px;
@@ -207,4 +208,17 @@ article:first-child {
     content: "content:";
     font-size: 15px;
     color: #b0bb99;
+}
+article {
+    position: relative;
+}
+.line_content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 3.2rem;
 }
