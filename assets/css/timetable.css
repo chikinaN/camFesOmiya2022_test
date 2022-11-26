@@ -1,6 +1,11 @@
 .tab {
     display: flex;
 }
+html {
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-padding-top: 60px;
+}
 ul.tab {
     list-style: none;
 }
@@ -28,9 +33,43 @@ iframe {
     height: 570px;
     margin: 0;
 }
+.page_top {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #fffffd;
+    border: solid 10px #5f7037;
+    border-radius: 25%;
+    right: 10px;
+    bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+.page_top_content {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(50% 5%,70% 30%,70% 30%,55% 30%,55% 65%,45% 65%,45% 30%,30% 30%,30% 30%);
+    background-color: black;
+}
+.page_top span::after {
+    position: absolute;
+    content: "page top";
+    text-align: center;
+    width: 80px;
+    z-index: 15;
+    bottom: 5px;
+    color: black;
+}
 @media screen and (max-width:960px) {
     .tab li a {
         font-size: 15px;
+    }
+    .main .main {
+        padding: 0;
+        margin: 0;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
     }
 }
 @media screen and (max-width:380px) {
