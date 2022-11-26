@@ -45,6 +45,7 @@
             <img class="gras_left" src="assets/image/gras.png">
             <img class="gras_right" src="assets/image/gras.png">
         </div>
+        <a href="#" class="page_top"><div class="page_top_content"></div><span></span></a>
         <div class="about">
             <!--本文-->
             <!--この中に記述を追加すると装飾が自動で入ります-->
@@ -56,17 +57,33 @@
                 <h1>タイムテーブル</h1>
                 <p>ここには主にステージ,マリカー大会,スマブラ大会,ONEDの四つのタームテーブルが載っています。<br>
                     <a href="#stage">ステージ</a>へ
-                    <a href="#">マリカー大会</a>へ
-                    <a href="#">スマブラ大会</a>へ
+                    <a href="#cart">マリオカート大会</a>へ
+                    <a href="#sumabura">スマブラ大会</a>へ
                     <a href="#">ONED</a>へ
                 </p>
             </div>
             <!--ステージのタイムテーブルの部分です-->
             <div class="main" id="stage">
                 <h2>ステージ</h2>
-                <div class="main" style="padding: 0;">
+                <div class="main" style="padding: 0;margin: 0;border-left: none;border-right: none;border-radius: 0;">
                     <!--iframeにてタイムテーブルの表示-->
-                    <iframe src="assets/time_deta/time_deta.html" name="time_iframe" style="border: none;margin: 0; width: 100%;height: 2672px;"></iframe>
+                    <iframe src="assets/time_deta/time_deta_stage.html" name="time_iframe" style="border: none;margin: 0; width: 100%;height: 2672px;"></iframe>
+                </div>
+            </div>
+            <!--マリオカートのタイムテーブルの部分です-->
+            <div class="main" id="cart">
+                <h2>マリオカート大会</h2>
+                <div class="main" style="padding: 0;margin: 0;border-left: none;border-right: none;border-radius: 0;">
+                    <!--iframeにてタイムテーブルの表示-->
+                    <iframe src="assets/time_deta/time_deta_cart.html" name="time_iframe" style="border: none;margin: 0; width: 100%;height: 840px;"></iframe>
+                </div>
+            </div>
+            <!--スマブラのタイムテーブルの部分です-->
+            <div class="main" id="sumabura">
+                <h2>スマブラ大会</h2>
+                <div class="main" style="padding: 0;margin: 0;border-left: none;border-right: none;border-radius: 0;">
+                    <!--iframeにてタイムテーブルの表示-->
+                    <iframe src="assets/time_deta/time_deta_sumabura.html" name="time_iframe" style="border: none;margin: 0; width: 100%;height: 1020px;"></iframe>
                 </div>
             </div>
         </div>
@@ -84,3 +101,4 @@
         </footer>
     </body>
 </html>
+
