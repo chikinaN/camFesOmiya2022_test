@@ -1,0 +1,7 @@
+.timetable{
+    display: flex;
+    justify-content: center;
+}
+.timetable p{
+    text-align: left;
+}
