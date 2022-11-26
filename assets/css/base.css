@@ -60,7 +60,6 @@ div.backImage {
     z-index: -9;
 }
 /*草の画像*/
-/*草の画像*/
 .gras_left ,
 .gras_right {
     z-index: 2;
@@ -84,7 +83,7 @@ div.backImage {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 60px;
+    height: 70px;
     width: 100%;
     top:0;
     z-index: 55;
@@ -106,8 +105,21 @@ div.backImage {
     outline: none;
     padding:13px 0;
 }
+.header_nav_left li{
+    margin-bottom: 5px;
+}
 .btn_hide{
     display: none;
+}
+/*ロゴ */
+.header_logo img{
+    object-fit: cover;
+    width: 120px;
+}
+.header_logo2 img{
+    object-fit: cover;
+    width: 100px;
+    margin-bottom: 5px;
 }
 /* フッター 共通部分*/
 .footer_about{
@@ -144,6 +156,7 @@ div.backImage {
         display: flex;
         justify-content: flex-end;
         margin-right: 40px;
+        margin-bottom: 25px;
         font-size: 18px;
     }
     .header_nav_right li{
