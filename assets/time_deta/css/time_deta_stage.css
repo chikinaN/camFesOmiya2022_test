@@ -210,6 +210,12 @@ article:first-child {
     font-size: 15px;
     color: #b0bb99;
 }
+.Webcast::after {
+    margin-left: 10px;
+    content: "配信有";
+    font-size: 15px;
+    color: #b0bb99;
+}
 article {
     display: flex;
     justify-content: center;
