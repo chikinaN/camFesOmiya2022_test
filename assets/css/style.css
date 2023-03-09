@@ -133,6 +133,31 @@ div[column] div.main{
     margin: 0 auto;
 }
 
+/* ページトップに戻る */
+
+.page_top_content {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(50% 5%,70% 30%,70% 30%,55% 30%,55% 65%,45% 65%,45% 30%,30% 30%,30% 30%);
+    background-color: black;
+}
+.page_top span::after {
+    position: absolute;
+    content: "page top";
+    text-align: center;
+    width: 80px;
+    z-index: 15;
+    bottom: 5px;
+    color: black;
+}
+
+/* スムーススクロール */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 /* PC用レイアウト */
 @media screen and (min-width:960px){
 }
@@ -144,6 +169,10 @@ div[column] div.main{
     .about div.main h3,
     .about div.main h4{
         margin: 0 22%;
+    }
+    .about div.main{
+        margin-left: 4%;
+        margin-right: 4%;
     }
 }
 /* スマホ用スタイル */
@@ -159,9 +188,17 @@ div[column] div.main{
     .about div.main h2,
     .about div.main h3,
     .about div.main h4{
-        margin: 0 15%;
+        margin: 0 auto;
     }
     .about div[column]>div:last-child{
         margin-top: 30px;
     }
+    .about div.main{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+a.page_top, a.page_top * {
+    display: none !important;
 }

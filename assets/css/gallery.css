@@ -149,4 +149,32 @@
 /* スマホ用スタイル */
 /* iPhoneSE二世代目より下のサイズを想定したレイアウトです。 */
 @media screen and (max-width:414px){
+        .accordion{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .accordion_content_box{
+        flex-direction: column;
+    }
+    .accordion_content_msg{
+        width: 70%;
+    }
+    .img_size1{
+        width: 90%;
+    }
+    .img_size2{
+        width: 95%;
+    }
+    .img_size3{
+        width: 98%;
+    }
+    .accordion_content_box iframe{
+        width: 80%;
+    }
+    .accordion_content_msg h1,
+    .accordion_content_msg h2,
+    .accordion_content_msg h3,
+    .accordion_content_msg h4{
+        margin-top: 15px;
+    }
 }

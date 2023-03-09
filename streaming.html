@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja" style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>大宮キャンフェス2022</title>
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/streaming.css">
+        <link rel="icon" href="assets/image/favicon.ico" id="favicon">
+    </head>
+    <body>
+        <!--背景-->
+        <div class="background">
+            <div class="backImage"></div>
+            <div class="backImage"></div>
+            <div class="backImage"></div>
+            <div class="backImage"></div>
+            <!-- 画像の数だけdiv.backImageを置く -->
+        </div>
+        <!--ヘッダー-->
+        <div id="header">
+            <!--ロゴ・タイトル-->
+        <ul class="header_nav_left">
+            <a href="index.html">
+                <div class="header_logo2"><img src="assets/image/logo_02.png"></div>
+                <li>大宮キャンフェス2022</a>
+            </li>
+        </ul>
+            <!--ハンバーガーメニュー用の記述-->
+            <input type="checkbox" id="toggle" class="btn_hide">
+            <label for="toggle" class="header_nav_btn">
+                <span></span>
+            </label>
+            <!--ページ遷移のリンク-->
+            <ul class="header_nav_right">
+                <li>
+                    <a href="booth_list.html">企画一覧</a>
+                </li>
+                <li>
+                    <a href="timetable.html">タイムテーブル</a>
+                </li>
+                <li>
+                    <a href="gallery.html">オンライン展示会</a>
+                </li>
+                <li>
+                    <a href="streaming.html">配信</a>
+                </li>
+                <li>
+                    <a href="access.html">会場アクセス</a>
+                </li>
+            </ul>
+        </div>
+        <div class="gras">
+            <img class="gras_left" src="assets/image/gras.png">
+            <img class="gras_right" src="assets/image/gras.png">
+        </div>
+        <a href="#" class="page_top">
+            <div class="page_top_content"></div>
+            <span></span>
+        </a>
+        <!--本文-->
+        <!--classは仮で設定しているものですので自由に書き換えて貰えればと-->
+        <div class="about">
+            <!--本文-->
+            <div class="other">
+                <h1>配信</h1>
+                <p>当日の配信URLです。Youtubeで配信を行います。</p>
+                <div class="main">
+                    <h3>ステージ</h3>
+                    <div style="width:80%;margin:0 auto;aspect-ratio:16/9">
+                        <iframe style="width:100%;height:100%;margin:0;" width="1920" height="1080" src="https://www.youtube.com/embed/pGIF6RyW7H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>  
+                 </div>
+                 <div class="main">
+                     <h3>ONED</h3>
+                     <div style="width:80%;margin:0 auto;aspect-ratio:16/9">
+                         <iframe style="width:100%;height:100%;margin:0;" width="1920" height="1080" src="https://www.youtube.com/embed/ClG2WqvQ3Xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!--フッター-->
+        <footer>
+            <div class="footer_about">
+                <div class="footer_img">
+                    <img class="footer_img_left" src="assets/image/footer_img_left.png">
+                    <img class="footer_img_right" src="assets/image/footer_img_right.png">
+                </div>
+                <div class="footer_msg">
+                    <p>大宮キャンフェス2022</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

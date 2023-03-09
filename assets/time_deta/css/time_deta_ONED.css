@@ -13,31 +13,8 @@
     padding: 20px 0;
     height: 40px;
 }
-.oned_table td:nth-child(2)::before {
-    content: "登壇者:";
-    margin-right: 10px;
-}
-tr:hover:not(.main) {
-    background-color: #eee;
-}
-.oned_table td:hover:not(.main td) {
-    height: 60px;
-}
 .time p {
     position: relative;
-}
-.oned_table tr:hover > .time p {
-    padding-left: 15px;
-}
-.oned_table tr:hover > .time p::before {
-    position: absolute;
-    content: "";
-    background-color: #222;
-    top: 15px;
-    left: 5px;
-    width: 5px;
-    height: 40px;
-    transform: translateY(-50%)scale(1,1.5);
 }
 .oned_table tr:first-child {
     border-top: 1px #222 solid;
